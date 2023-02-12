@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: burlywood;
+}
+
+main{
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 1rem;
+
+    grid-template-areas:
+        'banner'
+        'solution'
+        'web-development'
+        'networkservices'
+        'seo-optization'
+        'app-optimization'  
+        'data-recovery'
+    ;
+
+}
+body{
+    
+    background-color: #ddd;
+}
+.banner{
+    width: 1200;
+    height: 500px;
+    grid-area: banner;
+    background-color: rgb(255, 255, 255);
+}
+.solution{
+    width: 300px;
+    height: 300px;
+    grid-area: solution;
+    background-color: brown;
+}
+.web-development{
+    width: 300px;
+    height: 300px;;
+    grid-area: web-development;
+    background-color: rgb(201, 144, 38);
+}
+.networkservices{
+    width: 300px;
+    height: 300px;
+    grid-area: networkservices;
+    background-color: rgb(17, 154, 172);
+}
+.seo-optization{
+    width: 300px;
+    height: 300px;
+    grid-area: seo-optization;
+    background-color: rgb(102, 34, 129);
+}
+.app-optimization{
+    width: 300px;
+    height: 300px;
+    grid-area: app-optimization;
+    background-color: rgb(255, 22, 205);
+}
+.data-recovery{
+    width: 300px;
+    height: 300px;
+    grid-area: data-recovery;
+    background-color: rgb(20, 255, 255);
+}
+
+@media  screen and (min-width: 700px) {
+
+    main{
+        max-width: 1200px;
+        grid-template-areas:
+
+        'banner           banner              banner'
+        'solution         web-development     networkservices'
+        'seo-optization   app-optimization    data-recovery'
+    ;
+    
+    }
+}

@@ -7,11 +7,11 @@ header{
     background-color: burlywood;
 }
 
-main{
-    max-width: 700px;
-    margin: auto;
+main{  
+
     display: grid;
-    grid-row-gap: 1rem;
+    justify-content: space-evenly;
+    grid-row-gap: 2rem;
 
     grid-template-areas:
         'banner'
@@ -25,7 +25,7 @@ main{
 
 }
 body{
-    
+    font-family: 'Roboto', sans-serif; 
     background-color: #ddd;
 }
 .banner{
@@ -34,46 +34,99 @@ body{
     grid-area: banner;
     background-color: rgb(255, 255, 255);
 }
+
+
 .solution{
     width: 300px;
-    height: 300px;
+    height: 300px;;
     grid-area: solution;
-    background-color: brown;
+    background-color: #fff;
+    border-radius: 3px;   
+    box-shadow: 0 5px 10px rgb(192, 192, 192);
 }
+
 .web-development{
     width: 300px;
     height: 300px;;
     grid-area: web-development;
-    background-color: rgb(201, 144, 38);
+    background-color: #fff;
+    border-radius: 3px;   
+    box-shadow: 0 5px 10px rgb(192, 192, 192);
 }
+
 .networkservices{
     width: 300px;
     height: 300px;
     grid-area: networkservices;
-    background-color: rgb(17, 154, 172);
+    background-color: #fff;
+    border-radius: 3px;   
+    box-shadow: 0 5px 10px rgb(192, 192, 192);
 }
 .seo-optization{
     width: 300px;
     height: 300px;
     grid-area: seo-optization;
-    background-color: rgb(102, 34, 129);
+    background-color: #fff;
+    border-radius: 3px;   
+    box-shadow: 0 5px 10px rgb(192, 192, 192);
 }
 .app-optimization{
     width: 300px;
     height: 300px;
     grid-area: app-optimization;
-    background-color: rgb(255, 22, 205);
+    background-color: #fff;
+    border-radius: 3px;   
+    box-shadow: 0 5px 10px rgb(192, 192, 192);
 }
 .data-recovery{
     width: 300px;
     height: 300px;
     grid-area: data-recovery;
-    background-color: rgb(20, 255, 255);
+    background-color: #fff;
+    border-radius: 3px;   
+    box-shadow: 0 5px 10px rgb(192, 192, 192);
+    
 }
+
+img {
+    width: 60px;
+    height: 60px;    
+    margin: 0 120px;
+    margin-top: 30px;
+}
+
+
+h2{
+    margin-top: 5px;
+    text-align: center;
+}
+p{
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 1rem 1rem;
+    text-align:center;
+    color: hsl(0, 0%, 59%);
+}
+
+a{
+
+    margin: 0 110px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(61, 61, 201);
+}
+
+
+footer{
+    height: 80px;
+}
+
 
 @media  screen and (min-width: 700px) {
 
     main{
+        margin: auto;
         max-width: 1200px;
         grid-template-areas:
 
